@@ -3,6 +3,10 @@ const app= express();
 
 const port= 8000; 
 
+// use express router 
+// for any url starting with '/' use routes index.js
+app.use('/', require('./routes/index')); 
+
 app.listen(port, function(err){
 
     // INTERPOLLATION 
