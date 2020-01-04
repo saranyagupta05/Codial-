@@ -11,6 +11,6 @@ const homeController= require('../controllers/home_controller');
 router.get('/', homeController.home); 
 
 router.use('/users', require('./users'));
-router.use('/posts', require('./posts')); 
+//router.use('/posts', require('./posts')); 
 
 module.exports= router; // to export for app index.js 
